@@ -13,6 +13,7 @@ public class TrackProcessing {
         // identify elevations
         float[] elevations = {-3, -2, 0, 1, 2, 3, 1, 1, 4, 5, 4, 8};
         ArrayList<Pair<Integer, Integer>> climbs = identifyClimbs(elevations);
+
         for (int i = 0; i < climbs.size(); i++) {
             System.out.println("[" + climbs.get(i).getKey() + ", " + climbs.get(i).getValue() + "]");
         }
@@ -35,7 +36,7 @@ public class TrackProcessing {
                 new Pair<Double, Double>(2.0, 1.8),
                 new Pair<Double, Double>(5.5, 9.3)
             ));
-        System.out.println(identifySegmentInTrack(track, segment));
+//        System.out.println(identifySegmentInTrack(track, segment));
     }
 
 
